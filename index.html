@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crimolfind</title>
+    <script src="js/modernizr-custom.js"></script>
+    <script type="" url=""></script>
+    <script src="js/rule.js"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/aldo.css">
+    <link rel="stylesheet" href="css/aller.css">
+    <link rel="stylesheet" href="css/design.css">
+
+
+        
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="index.html">
+            <figure><img src="img/icon.png" alt=""></figure>
+            </a>
+            <a href="index.html">Christian Segovia</a>
+        </h1>
+
+        <nav id="ioMenu">
+            <figure id="showMenu" class="ioMenuMovil" onclick="displayMenu()"><img src="img/menu.png" alt=""></figure>
+
+            <div id="card_menu">
+                <figure id="hideMenu" class="ioMenuMovil" onclick="displayMenu()"><img src="img/exit.png" alt=""></figure>
+                <figure id="logo_menu"><img src="img/Logo.png" alt=""></figure>
+                <ul>
+                    <li><a onclick="navSection('home')" href="#">Home</a></li>
+                    <li><a onclick="navSection('cripto')" href="#">Cripto</a></li>
+                    <li><a onclick="navSection('search')" href="#">Search</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+
+
+        <div id="prev_section" onclick="displaySection('prev')"><img src="iconos/icon-08.png" alt=""></div>
+        <div id="next_section" onclick="displaySection('next')"><img src="iconos/icon-08.png" alt=""></div>
+    </header>
+   
+    <div id="slider">
+        <section class="slide" id="home" style="display: block">
+            <div class="mainanimation">
+
+            </div>
+
+            <div class="mainlogo">
+                <h2>Bienvenidos a <strong>Crimolfind</strong> donde te brindamos un buscador de <strong>
+                    Imagenes</strong>y Cotizador de <strong>Criptomonedas</strong></h2>
+                <figure><img src="img/Logo.png" alt=""></figure>
+            </div>  
+
+        </section>
+        <section class="slide" id="cripto" style="display: none">
+
+            <iframe class="iframe" src="cripto.html" frameborder="0"></iframe>
+
+        </section>
+        <section class="slide" id="search" style="display: none">
+
+            <iframe class="iframe2" src="busimage.html" frameborder="0"></iframe>
+
+        </section>    
+
+        
+    </div>
+
+    <footer>
+        <div class="rrs">
+            <a href="https://www.facebook.com/christian.segovia.353/">
+                <figure><img src="/iconos/rrss.png" alt=""></figure>
+            </a>
+            
+        </div>
+        <p>@ 2022 All rights reserved | Privacity Policy copyright</p>
+    </footer>
+
+</body>
+</html>
